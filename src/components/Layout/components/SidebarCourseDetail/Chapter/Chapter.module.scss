@@ -1,0 +1,39 @@
+.wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px 20px;
+  background-color: #f7f8fa;
+  border-bottom: 1px solid #dedfe0;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #edeff1;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.desc {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #29303b;
+}
+.icon {
+  position: absolute;
+  color: var(--text-color);
+  right: 23px;
+  top: 12px;
+  font-size: 1.6rem;
+}

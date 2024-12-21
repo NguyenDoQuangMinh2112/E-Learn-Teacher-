@@ -1,0 +1,57 @@
+aside {
+  width: 18%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - var(--header-height));
+  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+  background: rgb(255 251 251);
+}
+// will be show only mobile and tablet
+.closeBtn {
+  display: none;
+}
+
+.wrapper {
+  padding: 10px;
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    height: 5.2rem;
+    color: gray;
+    position: relative;
+
+    span {
+      font-size: 1.7rem;
+      margin-left: 3rem;
+      transition: all 300ms ease;
+    }
+
+    &:hover {
+      color: rgb(71, 7, 234);
+    }
+
+    &:hover span {
+      margin-left: 2rem;
+    }
+  }
+
+  h4 {
+    font-weight: 500;
+  }
+
+  a.active {
+    background: var(--white);
+    color: var(--primary);
+  }
+
+  a.active::before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    position: absolute;
+    background: rgb(71, 7, 234);
+  }
+}

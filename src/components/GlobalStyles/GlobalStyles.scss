@@ -1,0 +1,258 @@
+@import 'normalize.css';
+@import './Grid.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary: #fe2c55;
+  --black: #0000008a;
+  --white: #fff;
+  --text-color: #333;
+  --color-footer: #bbbbbb;
+  --invalid-color: #f33a58;
+
+  --header-color: #3a7ecf;
+
+  --font-family: 'Roboto', sans-serif;
+
+  // Default layout
+  --default-layout-header-height: 60px;
+  --default-layout-width: 1150px;
+  --default-layout-horizontal-spacer: 24px;
+
+  --comment-placeholder-color: #808b9a;
+  --comment-placeholder-bg: #eef4fc;
+  --comment-title-color: #4e586b;
+
+  // Header layout
+  --header-height: 58px;
+  --course-learning-header-height: 58px;
+
+  // Slider
+
+  // css grid
+  --grid-gutter-y: 0;
+  --grid-gutter-x: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+  color: var(--text-color);
+  overflow-y: overlay;
+}
+
+// Scrollbar CSS
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+img {
+  cursor: pointer;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+// Custom tippy tooltip
+body {
+  .tippy-box {
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    background-color: rgba(84, 84, 84, 0.92);
+  }
+
+  .tippy-arrow {
+    color: rgba(84, 84, 84, 0.92);
+  }
+
+  .tippy-content {
+    padding: 8px 9px;
+  }
+
+  .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+    top: -8px;
+  }
+
+  // custom react-slick
+  .slick-slide img {
+    border-radius: 15px;
+  }
+
+  .slick-list {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .slick-prev {
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    &::before {
+      content: '';
+    }
+  }
+  .slick-next {
+    right: -31px;
+    transform: translate(-50%, -50%);
+
+    &::before {
+      content: '';
+    }
+  }
+  .slick-next,
+  .slick-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    color: #4b4b4b;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 3px 6px #00000029;
+    text-align: center;
+    line-height: 32px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .slick-dots {
+    text-align: left;
+
+    li {
+      position: relative;
+      display: inline-block;
+      width: 32px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    li.slick-active {
+      width: 50px;
+    }
+
+    li button::before {
+      content: '';
+      width: 32px;
+      height: 8px;
+      opacity: 1;
+      border-radius: 4px;
+      margin-right: 10px;
+      background-color: #dce0e3;
+      transition: width 0.3s linear, background-color 0.3s linear;
+    }
+
+    .slick-active button::before {
+      width: 50px;
+      background-color: #9aa6af;
+    }
+  }
+
+  //custom toolbar
+  .rdw-editor-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+  }
+  .editorClassName {
+    padding: 10px;
+  }
+}
+// markdown editor light
+.rc-md-editor {
+  margin-bottom: 31px;
+  height: calc(-100px + 100vh) !important;
+}
+
+.d-flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.no-scroll {
+  overflow: hidden !important;
+}
+.db-none {
+  display: none;
+}
+
+.db-block {
+  display: block;
+}
+.disable {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.isCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// Mobile: width < 740px
+// Tablet: width >= 740px and width < 1024px
+// Pc: width >= 1024px
+/* >= Tablet */
+/* Mobile First Approach: Đối với điện thoại di động */
+// @media (max-width: 767px) {
+//   .example {
+//       font-size: 14px;
+//   }
+// }
+
+// /* Tablet: Đối với máy tính bảng */
+// @media (min-width: 768px) and (max-width: 1024px) {
+//   .example {
+//       font-size: 18px;
+//   }
+// }
+
+// /* Desktop: Đối với máy tính để bàn */
+// @media (min-width: 1025px) {
+//   .example {
+//       font-size: 22px;
+//   }
+// }

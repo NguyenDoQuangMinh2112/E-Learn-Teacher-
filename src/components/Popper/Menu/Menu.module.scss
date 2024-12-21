@@ -1,0 +1,74 @@
+.menu-popper {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 24px !important;
+}
+.menu-item {
+  color: #666;
+  cursor: pointer;
+  display: block;
+  font-size: 1.4rem;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #ffecec;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #ffecec;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.userMenu {
+  display: flex;
+  align-items: center;
+
+  .userMenu_avatar {
+    border-radius: 50%;
+    font-size: 5.6px;
+    // background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em;
+    position: relative;
+    background: linear-gradient(180deg, #ffd900, #b45264 93.68%);
+
+    img {
+      border-radius: 50%;
+      object-fit: cover;
+      width: 9em;
+      height: 9em;
+    }
+  }
+  .adminSignature {
+    position: absolute;
+    width: 3.2em !important;
+    height: 3.2em !important;
+    top: -0.2em;
+    right: -2em;
+  }
+  .userMenu_info {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+  .userMenu_name {
+    color: #292929;
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+  .userMenu_email {
+    color: #757575;
+    font-size: 1.4rem;
+  }
+}
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 8px 0;
+}

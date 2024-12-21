@@ -1,0 +1,48 @@
+.wrapper {
+  width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+  text-align: left;
+
+  label {
+    font-weight: 600;
+  }
+}
+.form-group {
+  position: relative;
+  background: var(--white);
+  border: 1.5px solid #dee3e9;
+  overflow: hidden;
+  height: 44px;
+  display: flex;
+  width: 40%;
+  border-radius: 5px;
+
+  &:focus-within {
+    border-color: #1dbfaf;
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 12px 42px 12px 20px;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    background-color: transparent;
+  }
+}
+
+.width-full {
+  position: relative;
+  background: var(--white);
+  border: 1.5px solid #dee3e9;
+  overflow: hidden;
+  height: 44px;
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+}
+.text {
+  font-weight: 600;
+}

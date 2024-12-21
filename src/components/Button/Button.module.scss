@@ -1,0 +1,276 @@
+.wrapper {
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  // margin-right: 16px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+
+  .title {
+    color: black;
+  }
+  .text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 40px;
+  }
+
+  .icon {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+  }
+  .whiteColor {
+    color: var(--white);
+  }
+  .svg_icon {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    left: 16px;
+  }
+}
+
+// Button sizes
+.small {
+  min-width: 88px;
+  padding: 4px 16px;
+}
+
+.large {
+  padding: 14px 16px;
+  min-width: 140px;
+}
+
+//btn-login-on-header
+.btn-login {
+  display: block;
+  white-space: nowrap;
+  padding: 9px 20px;
+  border: 1px solid #dee3e9;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity 0.25s;
+  border-radius: 100px;
+  background: linear-gradient(to right bottom, #71faff, #2c17ff);
+
+  .title {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+.btn-register {
+  margin-right: 30px;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+// rounded
+.btn_login {
+  width: 100%;
+  margin: 8px 0;
+  background-color: var(--black);
+  border-radius: 10px;
+  border: 1px solid var(--black);
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_login_google {
+  width: 100%;
+  color: var(--black);
+  margin: 8px 0;
+  font-weight: 600;
+  background: var(--white);
+  border: 1px solid var(--black);
+  gap: 10px;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.back {
+  position: fixed;
+  top: 7px;
+  left: 10px;
+  display: flex;
+  gap: 6px;
+  padding: 20px;
+  font-size: 1.6rem;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  color: gray;
+
+  .title {
+    color: gray !important;
+    font-weight: 400;
+  }
+
+  &:hover {
+    .title,
+    .icon {
+      color: black !important;
+    }
+  }
+}
+
+// BUTTON FROM DETAIL COURSE
+.cancle {
+  display: inline-block;
+  min-width: 148px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  background: linear-gradient(#5ebbff80 40%, #a174ff80);
+  transition: opacity 0.2s;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 0;
+  cursor: pointer;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    padding: 4px 16px;
+    border-radius: inherit;
+    border: 1px solid transparent;
+    background-color: var(--white);
+    background-clip: padding-box;
+    color: transparent;
+  }
+}
+.addNote_btn {
+  display: inline-block;
+  min-width: 148px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #5ebbff;
+  border-radius: 20px;
+  transition: opacity 0.2s;
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 0;
+  cursor: pointer;
+
+  span {
+    color: var(--white) !important;
+  }
+}
+
+.createPostBtn {
+  display: inline-block;
+  min-width: 148px;
+  height: 32px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: #0093fc !important;
+  border-radius: 20px;
+  transition: opacity 0.2s;
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 0 !important;
+  cursor: pointer;
+
+  span {
+    color: white !important;
+  }
+}
+.saveBtn {
+  padding: 10px 20px;
+  background: #1d86f2;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:hover {
+    background: #3e93e8;
+  }
+
+  .title {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+.editBtn {
+  background-color: #15e250;
+  border-radius: 5px;
+  padding: 0 10px;
+
+  .text {
+    color: var(--white);
+  }
+}
+
+.removeBtn {
+  background-color: #d01022;
+  border-radius: 5px;
+  padding: 0 10px;
+
+  .text {
+    color: var(--white);
+  }
+}
+
+.signInBtn {
+  width: 100%;
+  padding: 12px 42px 12px 20px;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #696cff;
+  border-color: #696cff;
+  border-radius: 8px;
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(105, 108, 255, 0.4);
+
+  .title {
+    color: #fff;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #5f61e6;
+    border-color: #5f61e6;
+  }
+}
