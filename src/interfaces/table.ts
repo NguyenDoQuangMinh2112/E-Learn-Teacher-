@@ -5,6 +5,8 @@ export type tableInterfaceCourseColumn = {
   description?: string
   // author?: string
   price?: number
+  rating?: any
+  students?: string
 }
 
 export type tableInterfaceStudentColumn = {

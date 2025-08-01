@@ -60,7 +60,7 @@ const useForm = (initialValues: FormValues) => {
         if (!res.isAvailable) {
           setErrors((prevErrors) => ({
             ...prevErrors,
-            [id]: 'Email đã được sử dụng. Vui lòng đăng nhập hoặc sử dụng email khác!'
+            [id]: 'Email is already in use. Please log in or use a different email!'
           }))
         }
       }, 700)
@@ -72,13 +72,13 @@ const useForm = (initialValues: FormValues) => {
     if (!value) {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        [id]: 'Trường này không được để trống'
+        [id]: 'This field cannot be empty'
       }))
     }
     if (id === 'fullName' && value.length < 5) {
       setErrors((prevErrors) => ({
         ...prevErrors,
-        [id]: 'Tên đăng nhập phải có ít nhất 5 ký tự'
+        [id]: 'Username must have at least 5 characters'
       }))
     }
   }, [])

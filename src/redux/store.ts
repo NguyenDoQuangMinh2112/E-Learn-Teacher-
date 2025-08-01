@@ -10,7 +10,7 @@ import { persistReducer, persistStore } from 'redux-persist'
 import { Persistor } from 'redux-persist/es/types'
 // Config redux persist
 const persistConfig = {
-  key: 'elearn/admin',
+  key: 'elearn/teacher',
   storage
 }
 const userConfig = {

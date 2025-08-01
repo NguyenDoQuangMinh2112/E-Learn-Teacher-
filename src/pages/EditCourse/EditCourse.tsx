@@ -133,8 +133,8 @@ const EditCourse = () => {
           <input type="file" hidden ref={fileInputRef} onChange={handleFileChange} />
           {!selectedFile && isHideText && (
             <div className={cx('placeholder')}>
-              <p>Ảnh đại diện hấp dẫn giúp bài viết của bạn cuốn hút hơn với độc giả.</p>
-              <span>Kéo thả ảnh vào đây, hoặc bấm để chọn ảnh</span>
+              <p>An attractive cover image helps your post be more appealing to readers.</p>
+              <span>Drag and drop an image here, or click to select an image</span>
             </div>
           )}
         </div>

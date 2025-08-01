@@ -58,7 +58,7 @@ const CourseDetail = () => {
             <h1 className={cx('headWrapper_title')} onClick={() => navigate(`/course/${courseDetail?._id}`)}>
               {courseDetail?.title}{' '}
             </h1>
-            <Menu items={courseMenu} placement="right">
+            <Menu items={courseMenu} placement="bottom-end">
               <HiDotsVertical size={20} />
             </Menu>
           </header>
